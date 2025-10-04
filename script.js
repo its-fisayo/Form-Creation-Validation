@@ -13,7 +13,7 @@ document.addEventListener("DOMContentLoaded", function() {
 
         if(username.length < 3) {
             isValid = false;
-            messages.push("Enter a username that has at least 3 characters!");
+            messages.push("Enter a username with at least 3 characters!");
         }
         if(email.includes("@") == false || email.includes(".") == false) {
             isValid = false;
@@ -21,10 +21,10 @@ document.addEventListener("DOMContentLoaded", function() {
         }
         if(password.length <= 8) {
             isValid = false;
-            messages.push("Your password must have a minimum of 8 characters!");
+            messages.push("Enter a password with at least 8 characters!");
         }
 
-        feedbackDiv.style.display = block;
+        feedbackDiv.style.display = "block";
         
         if(isValid == true) {
             feedbackDiv.textContent = "Registration Successful!";
